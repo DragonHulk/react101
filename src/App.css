@@ -1,0 +1,78 @@
+
+.username-field {
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #fdfaf6;
+  color: #2e2b29;
+  padding: 40px;
+  margin: 60px auto;
+  width: fit-content;
+  border: 2px solid #e4ded7;
+  border-radius: 12px;
+  box-shadow: 4px 4px 0px #d5ccc2;
+  font-family: 'Courier New', Courier, monospace;
+  position: relative;
+}
+
+.password-field {
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+/* Track that holds the ball and the fill */
+.ball-track {
+  position: relative;
+  height: 4vh;
+  width: 63%;
+  border-radius: 20px;
+  border: 2px solid #e0d8ce;
+  overflow: hidden;
+
+}
+
+/* Filling trail behind the ball */
+.ball-fill {
+  position: absolute;
+  height: 100%;
+  background-color: #bcd1ca; 
+  top: 0;
+  left: 0;
+  transition: width 0.3s ease;
+  z-index: 1;
+}
+
+/* Ball image */
+.ball-img {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  z-index: 2;
+  transition: transform 0.3s ease;
+  pointer-events: none;
+}
+
+.ball-holder {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
